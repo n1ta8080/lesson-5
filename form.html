@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 3 | Forms</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <fieldset style="margin-bottom: 8px">
+        <legend>Login</legend>
+
+        <label for="username">
+          Username
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="user123"
+          />
+        </label>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" minlength="6" />
+      </fieldset>
+
+      <fieldset style="margin-bottom: 8px">
+        <legend>Choose an animal</legend>
+
+        <label for="dog">Dog</label>
+        <input id="dog" type="radio" name="animal" value="dog" />
+
+        <label for="cat">Cat</label>
+        <input id="cat" type="radio" name="animal" value="cat" />
+        <label for="horse">Horse</label>
+        <input id="horse" type="radio" name="animal" value="horse" />
+
+        <select name="gender" id="">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </fieldset>
+
+      <button>Submit button</button>
+    </form>
+
+    <div style="margin: 10px 0">
+      <button id="showDialog">Show Dialog</button>
+    </div>
+
+    <dialog style="margin: 10px">
+      <form action="" method="dialog" style="text-align: right">
+        <button>X</button>
+      </form>
+      <div>
+        <h3>Dialog is a bult-in HTML5 modal window</h3>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+          mollitia id, et neque odio quas temporibus voluptates sint rerum
+          praesentium amet accusantium commodi, aliquid voluptatem consectetur
+          ut? Suscipit, iure nisi!
+        </p>
+      </div>
+    </dialog>
+
+    <script>
+      const dialog = document.querySelector("dialog");
+      const showDialog = document.getElementById("showDialog");
+
+      showDialog.addEventListener("click", () => {
+        dialog.show();
+      });
+    </script>
+  </body>
+</html>
