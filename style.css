@@ -1,0 +1,37 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #96B6C5;
+}
+
+td.free-time {
+    background-color: #DCF2F1;
+}
+
+td.self-education {
+    background-color: #7FC7D9;
+}
+
+td.time {
+    background-color: #EEE0C9;
+}
+
+td.break {
+    background-color: #F1F0E8;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+

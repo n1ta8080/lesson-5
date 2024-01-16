@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hometask</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Form for user information -->
+    <form action="greeting.html">
+        <fieldset>
+            <legend>Особиста інформація</legend>
+            <label for="login">
+                Логін:
+                <input type="text" placeholder="Login" name="login" id="login" required minlength="2" maxlength="8">
+                <!-- There also we could use pattern instead min(max)-lenght it would be => pattern="{2,8}" as a regular expression -->
+            </label><br><br>
+        
+            <label for="email">
+                Адреса електронної пошти:
+                <input type="email" placeholder="E-mail" name="email" id="email" required>
+            </label><br><br>
+        
+            <label for="phone">
+                Номер телефону:
+                <input type="tel" placeholder="Phone number" name="phone" id="phone">
+            </label><br><br>
+
+            <!-- Choise of T-short size -->
+            <label for="size">
+                Розмір футболки:
+                <select name="size" id="size" required>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select><br><br>
+
+                <label for="date-of-birth">
+                    Ваш день народження:
+                    <input type="date" name="date-of-birth" id="date-of-birth">
+                </label>
+            </label>
+        
+            <!-- Gender choise -->
+            <fieldset>
+                <legend>Стать</legend>
+                <label for="male">
+                    Чоловік
+                <input type="radio" name="gender" id="male" value="male" required>
+                </label>
+
+                <label for="female">
+                    Жінка
+                    <input type="radio" name="gender" id="female" value="female" required>
+                </label>
+            </fieldset>
+        </fieldset>
+        
+        <!-- Preferences -->
+        <fieldset>
+            <legend>Вподобання</legend>
+            <span>Мова(и) програмування:</span><br><br>
+            <label for="js">
+                <input type="checkbox" name="lang" id="js" value="js">
+                JavaScript
+            </label><br>
+            
+            <label for="python">
+                <input type="checkbox" name="lang" id="python" value="python">
+                Python
+            </label><br>
+            
+            <label for="c++">
+                <input type="checkbox" name="lang" id="с++" value="c++">
+                C++
+            </label><br>
+            
+            <label for="java">
+                <input type="checkbox" name="lang" id="java" value="java">
+                Java
+            </label>
+        </fieldset>
+        <br>
+
+        <!-- Send submit -->
+        <label for="submit">
+            <input type="submit" value="Відправити" name="submit" id="submit">
+        </label>
+    </form> <br>
+
+    <a href="./index1.html">Повернутися назад</a>
+</body>
+</html>
